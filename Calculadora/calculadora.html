@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="calculadora.css">
+</head>
+<body>
+    <section>
+        <article>
+            <div id="content">
+                <div class="teclas">
+                    <input type="text" id="receber" readonly value="0">
+                    <br>
+                    <button onclick="writeNumber(this)" id="n1">1</button>
+                    <button onclick="writeNumber(this)" id="n2">2</button>
+                    <button onclick="writeNumber(this)" id="n3">3</button>
+                    <button onclick="setOperator(this)" id="divisão">/</button>
+                    <br>
+                    <button onclick="writeNumber(this)" id="n4">4</button>
+                    <button onclick="writeNumber(this)" id="n5">5</button>
+                    <button onclick="writeNumber(this)" id="n6">6</button>
+                    <button onclick="setOperator(this)" id="multiplicação">*</button>
+                    <br>
+                    <button onclick="writeNumber(this)" id="n7">7</button>
+                    <button onclick="writeNumber(this)" id="n8">8</button>
+                    <button onclick="writeNumber(this)" id="n9">9</button>
+                    <button onclick="setOperator(this)" id="subtração">-</button>
+                    <br>
+                    <button onclick="limparNumero()" id="C">C</button>
+                    <button onclick="writeNumber(this)" id="n0">0</button>  
+                    <button onclick='setOperator(this,true)' id="dec">.</button>
+                    <button onclick="setOperator(this)" id="soma">+</button>
+                    <br>
+                    <button onclick="removerNumero()" id="removerUltimo">B</button> 
+                    <button onclick="calcular()" id="calcular" style="width: 189px">=</button>
+                </div>
+            </div>
+        </article>
+        </form>
+    </section>
+    <script src="calculadora.js"></script>
+</body>
+</html>
